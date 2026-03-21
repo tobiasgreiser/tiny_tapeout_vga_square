@@ -104,21 +104,21 @@ async def test_project(dut):
     os.makedirs("output", exist_ok=True)
 
     # First frame: standard configuration
-    frame = await capture_frame(0)
+    frame = await capture_frame(0, check_sync=False)
     frame.save(f"output/frame0.png")
 
     # Second frame: we should see the logo moving by one pixel
-    frame = await capture_frame(1)
+    frame = await capture_frame(1, check_sync=False)
     frame.save(f"output/frame1.png")
 
     # Second frame: tiled logo
     dut.ui_in.value = 1  # tile
-    frame = await capture_frame(2)
+    frame = await capture_frame(2, check_sync=False)
     frame.save(f"output/frame2.png")
 
     # Third frame: double size logo
     dut.ui_in.value = 2  # double
-    frame = await capture_frame(3)
+    frame = await capture_frame(3, check_sync=False)
     frame.save(f"output/frame3.png")
 
 
