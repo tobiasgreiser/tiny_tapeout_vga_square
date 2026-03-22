@@ -65,7 +65,7 @@ module tt_um_tobiasgreiser_move_vga_square(
   assign end_square_x = square_size + offset_x;
   assign end_square_y = square_size + offset_y;
 
-  // Chekc if pixel is between start and end square
+  // Check if pixel is between start and end square
   assign draw_square = start_square_x < pix_x &&
       pix_x < end_square_x &&
       start_square_y < pix_y &&
