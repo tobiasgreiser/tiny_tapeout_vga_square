@@ -9,12 +9,20 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Iagine sitting in front of a computer screen, moving the mouse. That's exactly what I tried to replicate, except that you can change the cursor size when you have a hard time finding it. The cursor is supposed to be white on a gray background.
+
+Inputs 0 to 5 are used:
+- 0: Move the cursor to the left
+- 1: Move the cursor to the right
+- 2: Move the cursor to the top
+- 3: Move the cursor to the bottom
+- 4: Increase cursor size
+- 5: Decrease cursor size
 
 ## How to test
 
-Explain how to use your project
+Connect a VGA monitor. Set the inputs according to your preference.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Tiny VGA Pmod and switches.
