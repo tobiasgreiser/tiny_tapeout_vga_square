@@ -34,7 +34,7 @@ module tt_um_tobiasgreiser_move_vga_square(
   assign uio_oe  = 0;
 
   // Suppress unused signals warning
-  wire _unused_ok = &{ena, uio_in};
+  wire _unused_ok = &{ena, ui_in[7:6], uio_in};
 
   hvsync_generator hvsync_gen(
     .clk(clk),
